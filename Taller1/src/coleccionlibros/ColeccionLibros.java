@@ -56,7 +56,11 @@ public class ColeccionLibros {
                 }
             }else if (opcion == 3){
                conjunto.mostrarMM();
-            } else {
+            } else if (opcion == 4){
+                System.out.println("Ingrese el nombre del libro del cual desea ver la informacion");
+                 Titulo = in.next();
+                conjunto.darInformacionLibros(Titulo);
+            }{
                 System.exit(0);
             }
     
